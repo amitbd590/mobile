@@ -1,0 +1,336 @@
+/*
+Theme name :
+Author: Amit
+Support: amitbd590@gmail.com
+Description :-----------
+Version:1.0
+*/
+
+/*CSS Index ------------
+
+1. Theme defaul css.
+2. Header.
+3. Slider.
+4. About-Area.
+5. Feature-Box.
+6. Department.
+7. Counter.
+8. Footer.
+
+*/
+
+
+
+/*1. Theme defaul css.*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+img {
+	max-width: 100%;
+	transition: all 0.3s ease-out 0s;
+}
+
+.f-left {
+	float: left;
+}
+
+.f-right {
+	float: right;
+}
+
+.fix {
+	overflow: hidden;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	color: black;
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: normal;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: 500;
+}
+
+h2 {
+	font-size: 35px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+	font-size: 22px;
+}
+
+h5 {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	list-style: none;
+}
+
+p {
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #7e7e7e;
+	margin-bottom: 15px;
+}
+
+hr {
+	border-bottom: 1px solid #eceff8;
+	border-top: 0 none;
+	margin: 30px 0;
+	padding: 0px;
+}
+
+label {
+	color: #7e7e7e;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+::-moz-selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+
+::selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+
+::placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+
+.theme-overlay {
+	position: relative;
+}
+
+.theme-overlay::before {
+	background: #1696e7 none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+/****************/
+
+
+
+/*header*/
+
+/* Nav Bar  */
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.main{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	background: linear-gradient(to right, #9c27b0,  #8ecdff);
+}
+
+nav{
+	width: 80%;
+	position: sticky;
+	margin: 20px auto;
+	z-index: 1;
+	align-items: center;
+}
+.logo {
+	flex: 20%;
+}
+.logo img {
+	width: 150px;
+}
+.nav-links{
+	flex: 1;
+	text-align: right;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0px 20px;
+}
+.nav-links ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+.nav-links ul li a:hover{
+	color: #2230d8;
+}
+
+.information{
+	width: 1000px;
+	height: 1000px;
+	position: absolute;
+	top: 50%;
+	left: -10%;
+	transform: translateY(-50%);
+}
+
+#circle{
+	width: 1000px;
+	height: 1000px;
+	position: absolute;
+	top: 0 ;
+	left: 0;
+	border-radius: 50%;
+	transform: rotate(0deg);
+	transition: 1s;
+	/* background: #ccc; */
+}
+.feature img{
+    width: 70px;
+    height: 70px;
+
+}
+.feature {
+	position: absolute;
+	display: flex;
+	color: #fff;
+}
+.feature div{
+	margin-left: 30px;
+}
+.feature div p{
+	margin-left: 8px;
+	color: #fff;
+}
+.feature div h2{
+	color: #fff;
+	font-weight: 900;
+}
+.one{
+	top: 450px;
+	right: 50px;
+}
+.two{
+	top: 116px;
+    left: 351px;
+transform: rotate(-90deg);
+}
+.three{
+	bottom: 450px;
+	left: 50px;
+	transform: rotate(-180deg);
+}
+.four{
+	bottom: 150px;
+    right: 385px;
+	transform: rotate(-270deg);
+}
+.mobile{
+	width: 150px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+
+.controls{
+	position: absolute;
+	right: 10%;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+}
+.controls h4{
+	margin: 15px 0px;
+	color: rgb(0, 0, 0);
+	font-weight: 800;
+}
+#upbtn {
+	width: 15px;
+	cursor: pointer;
+}
+#downbtn {
+	width: 15px;
+	cursor: pointer;
+	transform: rotate(180deg);
+}
+.overlay{
+	width: 0;
+	height: 0;
+	border-top: 500px solid rgb(255, 255, 255);
+	border-right: 500px solid rgba(255, 2, 2, 0);
+	border-left: 500px solid rgb(255, 255, 255);
+	border-bottom: 500px solid rgb(255, 255, 255);
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+
+
+
+
+
+
+
+
+/* 
+/* Media  */
